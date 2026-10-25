@@ -49,9 +49,10 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <p>এখানে আমি TikTok Pixel সেটআপ অনুশীলন করছি।</p>
     <h2>নমুনা পণ্য</h2>
     <p>পণ্যের মূল্য: ৳৫০০</p>
-    <button onclick="alert('Test button clicked!')">
-      View Product
+    <button onclick="ttq.track('ViewContent'); alert('Test button clicked!')">
+  View Product
     </button>
+
   </div>
 </body>
 </html>
