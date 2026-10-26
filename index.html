@@ -51,7 +51,11 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <p>পণ্যের মূল্য: ৳৫০০</p>
     <button onclick="ttq.track('ViewContent', {content_id: 'product_001', content_type: 'product', value: 500, currency: 'BDT'}); alert('Viewing product!')">
   View Product
-</button>
+    </button>
+<br><br>
+    <button onclick="ttq.track('AddToWishlist', {contents: [{content_id: 'product_001', content_type: 'product', quantity: 1, price: 500}], content_type: 'product', value: 500, currency: 'BDT'}); alert('Demo AddToWishlist event sent!')">
+  Add to Wishlist
+    </button>
 <br><br>
     <button onclick="ttq.track('AddToCart', {contents: [{content_id: 'product_001', content_type: 'product', quantity: 1, price: 500}], content_type: 'product', value: 500, currency: 'BDT'}); alert('Product added to cart!')">
   Add to Cart
@@ -59,13 +63,15 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 <br><br>
 <button onclick="ttq.track('InitiateCheckout', {contents: [{content_id: 'product_001', content_type: 'product', quantity: 1, price: 500}], content_type: 'product', value: 500, currency: 'BDT'}); alert('Checkout started!')">
   Proceed to Checkout
-</button>
+    </button>
+<br><br>
     <button onclick="ttq.track('AddPaymentInfo', {contents: [{content_id: 'product_001', content_type: 'product', quantity: 1, price: 500}], content_type: 'product', value: 500, currency: 'BDT'}); alert('Demo AddPaymentInfo event sent!')">
   Test Add Payment Info
     </button>
-   <button onclick="ttq.track('Purchase', {contents: [{content_id: 'product_001', content_type: 'product', quantity: 1, price: 500}], content_type: 'product', value: 500, currency: 'BDT'}); alert('Demo Purchase event sent!')">
+<br><br>
+    <button onclick="ttq.track('Purchase', {contents: [{content_id: 'product_001', content_type: 'product', quantity: 1, price: 500}], content_type: 'product', value: 500, currency: 'BDT'}); alert('Demo Purchase event sent!')">
   Test Demo Purchase
-  </button> 
+    </button> 
   </div>
 </body>
 </html>
